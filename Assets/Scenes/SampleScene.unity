@@ -216,6 +216,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &154114240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154114241}
+  - component: {fileID: 154114242}
+  m_Layer: 0
+  m_Name: Terra Pyvot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &154114241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154114240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2000.0457, y: 0.028240323, z: -0.04528457}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 436960225}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154114242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154114240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59dbb04ea1fcd94a865816aa18bd93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alvo: {fileID: 872874859}
 --- !u!1 &436960221
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,6 +273,7 @@ GameObject:
   - component: {fileID: 436960224}
   - component: {fileID: 436960223}
   - component: {fileID: 436960222}
+  - component: {fileID: 436960226}
   m_Layer: 0
   m_Name: Lua
   m_TagString: Untagged
@@ -305,12 +351,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436960221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2000.0016, y: -0.013280969, z: -3.503}
+  m_LocalPosition: {x: -0.044067383, y: -0.041521292, z: -3.4577155}
   m_LocalScale: {x: 0.2727, y: 0.2727, z: 0.2727}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 154114241}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &436960226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436960221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0497377eed1a6840a2091b1bf1b9a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  terra: {fileID: 154114240}
+  trans: 0.037037037
 --- !u!1001 &852610760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,6 +466,7 @@ GameObject:
   - component: {fileID: 872874861}
   - component: {fileID: 872874860}
   - component: {fileID: 872874864}
+  - component: {fileID: 872874865}
   m_Layer: 0
   m_Name: Terra
   m_TagString: Untagged
@@ -503,6 +564,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: 1
+--- !u!114 &872874865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872874859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029bc2b169a96f046994aef6053b1f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trans: 0.002739726
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,11 +654,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.36, z: -634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -14.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1761151435}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
@@ -659,6 +733,8 @@ GameObject:
   - component: {fileID: 1055166528}
   - component: {fileID: 1055166527}
   - component: {fileID: 1055166526}
+  - component: {fileID: 1055166531}
+  - component: {fileID: 1055166530}
   m_Layer: 0
   m_Name: Mercurio
   m_TagString: Untagged
@@ -742,6 +818,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1055166530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055166525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029bc2b169a96f046994aef6053b1f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trans: 0.0000311
+--- !u!114 &1055166531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055166525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b254d130b931e74b8b98bcc976a9b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rot: 0.0017
 --- !u!1 &1228761409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1157,7 @@ GameObject:
   - component: {fileID: 1646232992}
   - component: {fileID: 1646232991}
   - component: {fileID: 1646232995}
+  - component: {fileID: 1646232996}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -1150,7 +1253,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b254d130b931e74b8b98bcc976a9b80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rot: -0.00406504
+  rot: 0.0041
+--- !u!114 &1646232996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646232990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029bc2b169a96f046994aef6053b1f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trans: 0.0000121928
 --- !u!1 &1724449561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1279,8 @@ GameObject:
   - component: {fileID: 1724449564}
   - component: {fileID: 1724449563}
   - component: {fileID: 1724449562}
+  - component: {fileID: 1724449567}
+  - component: {fileID: 1724449566}
   m_Layer: 0
   m_Name: Saturno
   m_TagString: Untagged
@@ -1248,6 +1366,84 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1724449566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724449561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029bc2b169a96f046994aef6053b1f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trans: 0
+--- !u!114 &1724449567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724449561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b254d130b931e74b8b98bcc976a9b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rot: 0
+--- !u!1 &1761151434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1761151435}
+  - component: {fileID: 1761151436}
+  m_Layer: 0
+  m_Name: Grua
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1761151435
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761151434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.36, z: -692.21}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 963194228}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1761151436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761151434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5bd2e3138dc2540963b75c43e64213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mercurio: {fileID: 1055166525}
+  venus: {fileID: 1646232990}
+  terra: {fileID: 872874859}
+  marte: {fileID: 1228761409}
+  jupter: {fileID: 2028269769}
+  saturno: {fileID: 1724449561}
+  lua: {fileID: 436960221}
+  indice: 0
 --- !u!1 &1775454543
 GameObject:
   m_ObjectHideFlags: 0
